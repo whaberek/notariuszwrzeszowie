@@ -2,7 +2,7 @@ baseURL = "https://whaberek.netlify.com"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
-title = "Kross | Hugo Portfolio Template"
+title = "Notariusz w Rzeszowie"
 [[menu.main]]
 URL = "about"
 name = "About"
