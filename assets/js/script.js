@@ -82,7 +82,7 @@
             mouseParallax('l3', c3left, c3top, x, y, 20);
             mouseParallax('l4', c4left, c4top, x, y, 35);
             mouseParallax('l5', c5left, c5top, x, y, 30);
-            mouseParallax('l6', c6left, c6top, x, y, 45);
+            mouseParallax('l6', c6left, c6top, x, y, 70);
             mouseParallax('l7', c7left, c7top, x, y, 30);
             mouseParallax('l8', c8left, c8top, x, y, 25);
             mouseParallax('l9', c9left, c9top, x, y, 40);

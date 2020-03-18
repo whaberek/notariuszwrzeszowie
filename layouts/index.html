@@ -1,16 +1,16 @@
 {{ define "main" }}
 
   <!-- hero area -->
-  <section class="hero-area bg-primary overflow-hidden" id="parallax">
-    <div class="container">
+  <section class="hero-area overflow-hidden homepage" id="parallax">
+    <div class="layer-bg homepage-background">
+      <img class="img-fluid homepage-background-image" src="{{`images/backgrounds/unsplash3.jpg` | relURL}}" alt="bg-shape">
+    </div>
+    <div class="container homepage-title">
       <div class="row">
         <div class="col-lg-11 mx-auto">
-          <h1 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
+          <h2 class="text-black text-center font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h2>
         </div>
       </div>
-    </div>
-    <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
     </div>
     <div class="layer" id="l2">
       <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
@@ -37,7 +37,7 @@
       <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
     </div>
     <!-- social icon -->
-    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    <ul class="list-unstyled ml-3 zindex-1 homepage-social">
       {{ range .Site.Params.social }}
       <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
       {{ end }}
