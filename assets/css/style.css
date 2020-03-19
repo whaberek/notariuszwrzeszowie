@@ -153,7 +153,8 @@ h6,
 
 body {
   background-color: #fff;
-  overflow-x: hidden
+  overflow-x: hidden;
+  padding: 20px;
 }
 
 ::selection {
@@ -423,8 +424,8 @@ textarea.form-control {
 }
 
 .navigation.nav-bg {
-  background-color: var(--primary-color);
-  padding: 15px 100px
+  background-color: #fff;
+  padding: 15px 100px;
 }
 
 @media(max-width:991px) {
@@ -436,7 +437,7 @@ textarea.form-control {
 @media(max-width:991px) {
   .navigation {
     padding: 20px;
-    background: var(--primary-color)
+    background: #fff
   }
 }
 
@@ -447,11 +448,11 @@ textarea.form-control {
 }
 
 .navbar .nav-item.active .nav-link{
-  color: #52f8f4;
+  color: var(--primary-color);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  color: #000;
 }
 
 .hero-area {
@@ -469,56 +470,6 @@ textarea.form-control {
 .hero-area h1 {
   position: relative;
   z-index: 2
-}
-
-.layer {
-  position: absolute;
-  z-index: 1
-}
-
-#l1 {
-  bottom: 0;
-  left: 0
-}
-
-#l2 {
-  top: 190px;
-  left: -250px
-}
-
-#l3 {
-  top: 200px;
-  left: 40%
-}
-
-#l4 {
-  top: 200px;
-  right: 40%
-}
-
-#l5 {
-  top: 100px;
-  right: -150px
-}
-
-#l6 {
-  bottom: 25%;
-  left: 10%
-}
-
-#l7 {
-  bottom: 100px;
-  left: 20%
-}
-
-#l8 {
-  bottom: 160px;
-  right: 45%
-}
-
-#l9 {
-  bottom: 35%;
-  right: 20%;
 }
 
 .layer-bg {
@@ -874,6 +825,16 @@ blockquote {
 
 /* ############### CUSTOM STYLES ############### */
 
+/* Header */
+.navbar-brand {
+  color: #000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+/* Header */
+
 /* Homepage */
 .homepage {
   height: 100vh;
@@ -888,7 +849,7 @@ blockquote {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,.5);
+  background: rgba(255,255,255,.6);
 }
 .homepage-background-image {
   object-fit: cover;
