@@ -841,7 +841,10 @@ blockquote {
   padding: 0;
   display: flex;
 }
-.homepage-background { height: 100vh }
+.homepage-background {
+  height: 100vh;
+  width: 100%
+}
 .homepage-background:before {
   content: '';
   position:absolute;
