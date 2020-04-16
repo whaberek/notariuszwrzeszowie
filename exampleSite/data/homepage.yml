@@ -1,11 +1,10 @@
 ---
 banner:
-  title : "Kancelaria Notarialna<br>Anna Grygowicz-Haberek<br>Notariusz"
-
-# about
+  title: Kancelaria Notarialna<br>Anna Grygowicz-Haberek<br>Notariusz
 about:
-  enable : true
-  content : "Witam na stronie internetowej prowadzonej przeze mnie kancelarii notarialnej. Zapraszam do zapoznania się z informacjami zamieszczonymi na kolejnych podstronach."
+  enable: true
+  content: Witam na stronie internetowej prowadzonej przeze mnie kancelarii notarialnej.
+    Zapraszam do zapoznania się z informacjami zamieszczonymi na kolejnych podstronach.
 experience:
   enable: true
   title: Experience
@@ -112,6 +111,7 @@ clients_logo_slider:
     URL: http://examplesite.com
   - logo: images/clients-logo/client-logo-5.png
     URL: "#"
+  title: Kancelaria
 blog:
   enable: true
   title: Blogs
