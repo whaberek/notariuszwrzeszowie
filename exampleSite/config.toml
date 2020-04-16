@@ -1,7 +1,7 @@
 baseURL = "https://whaberek.netlify.com"
 languageCode = "en-us"
 summaryLength = "10"
-theme = "kross-hugo"
+theme = "notariuszwrzeszowie"
 title = "Notariusz w Rzeszowie"
 
 # css plugins
@@ -26,31 +26,39 @@ URL = "plugins/shuffle/shuffle.min.js"
 
 # menu
 [[menu.main]]
-URL = "about"
-name = "About"
+URL = "o-kancelarii"
+name = "O Kancelarii"
 weight = 2
 [[menu.main]]
-URL = "blog"
-name = "Blog"
+URL = "oplaty"
+name = "Opłaty"
 weight = 3
 [[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
+URL = "przydatne"
+name = "Przydatne linki"
 weight = 4
 [[menu.main]]
-URL = "contact"
-name = "Contact"
+URL = "czynnosci"
+name = "Czynności"
 weight = 5
+[[menu.main]]
+URL = "dokumenty"
+name = "Dokumenty"
+weight = 6
+[[menu.main]]
+URL = "kontakt"
+name = "Kontakt"
+weight = 7
 [params]
-address = "125/A, CA Commercial Area, California, USA"
-author = "Johnathan Smith"
-copyright = "Copyrighht &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
+address = "ul. 3 Maja<br>35-604 Rzeszów"
+author = "Wojciech Haberek"
+copyright = "Copyrighht &copy; 2020 a theme by [Wojciech Haberek](http://whaberek.pl)"
 description = "This is meta description"
-email = "steve.fruits@email.com"
+email = "kancelaria@grygowicz-haberek.com"
 google_analitycs_id = ""
-home = "Home"
+home = "Strona Główna"
 logo = "images/logo.png"
-phone = "+880 2544 658 256"
+phone = "+48 500 500 500"
 theme_color = "#41228e"
 [params.contact]
 enable = true
