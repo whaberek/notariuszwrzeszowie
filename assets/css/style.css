@@ -902,16 +902,13 @@ blockquote {
   height: 100%;
   width: 100%;
 }
-
 .homepage-title {
   align-self: center;
 }
-
 .homepage-social {
   position: absolute;
   align-self: center;
 }
-
 .homepage-social a {
   color: #000
 }
@@ -919,15 +916,19 @@ blockquote {
 
 /* Homepage - invite */
 .homepage-invite {}
-
 .homepage-invite--title {
   font-size: 24px;
   margin-bottom: 110px;
   line-height: 40px;
 }
-
-.homepage-invite--location {
-  line-height: 40px;
+.homepage-invite ul {
+  line-height: 25px;
+  list-style: disc;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+.homepage-invite ul li {
+  margin-bottom: 5px !important;;
 }
 
 /* Homepage - invite */
