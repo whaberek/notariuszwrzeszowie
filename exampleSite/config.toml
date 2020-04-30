@@ -1,8 +1,8 @@
 baseURL = "https://whaberek.netlify.com"
-languageCode = "en-us"
+languageCode = "pl-PL"
 summaryLength = "10"
 theme = "notariuszwrzeszowie"
-title = "Notariusz w Rzeszowie"
+title = "Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz"
 
 # css plugins
 [[params.plugins.css]]
@@ -26,29 +26,25 @@ URL = "plugins/shuffle/shuffle.min.js"
 
 # menu
 [[menu.main]]
-URL = "o-kancelarii"
-name = "O Kancelarii"
+URL = "czynnosci"
+name = "Czynności"
 weight = 2
 [[menu.main]]
-URL = "oplaty"
-name = "Opłaty"
+URL = "dokumenty"
+name = "Dokumenty"
 weight = 3
 [[menu.main]]
 URL = "przydatne"
 name = "Przydatne linki"
 weight = 4
 [[menu.main]]
-URL = "czynnosci"
-name = "Czynności"
+URL = "oplaty"
+name = "Opłaty"
 weight = 5
-[[menu.main]]
-URL = "dokumenty"
-name = "Dokumenty"
-weight = 6
 [[menu.main]]
 URL = "kontakt"
 name = "Kontakt"
-weight = 7
+weight = 6
 [params]
 address = "ul. 3 Maja<br>35-604 Rzeszów"
 author = "Wojciech Haberek"
@@ -69,6 +65,8 @@ URL = "plugins/bootstrap/bootstrap.min.css"
 URL = "plugins/slick/slick.css"
 [[params.plugins.css]]
 URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+URL = "plugins/fontawesome-icons/css/all.min.css"
 [[params.plugins.js]]
 URL = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
