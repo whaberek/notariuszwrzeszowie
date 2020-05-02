@@ -3,18 +3,11 @@
 PROJECT: Project Name
 VERSION: Versoin Number
 -------------------------------------------------------------------*/
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
-
-@font-face {
-  font-family: bwnistaint-xbd;
-  src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
-  font-style: normal;
-  font-display: swap
-}
+@import "https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap";
 
 body {
   line-height: 1.2;
-  font-family: roboto, sans-serif;
+  font-family: 'Hind', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c
@@ -25,7 +18,6 @@ p {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: roboto, sans-serif
 }
 
 h1,
@@ -35,7 +27,7 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: playfair display, serif;
+  font-family: 'Hind', sans-serif;
   line-height: 1.2
 }
 
@@ -189,7 +181,8 @@ img {
 a,
 a:hover,
 a:focus {
-  text-decoration: none
+  text-decoration: none;
+  color: inherit
 }
 
 a,
@@ -224,7 +217,7 @@ a:hover {
 
 .section-title {
   margin-bottom: 80px;
-  font-family: bwnistaint-xbd
+  font-family: 'Hind', sans-serif;
 }
 
 .bg-cover {
@@ -332,12 +325,12 @@ a:hover {
   overflow: hidden
 }
 
-.font-secondary {
-  font-family: playfair display, serif !important
+.font-primary {
+  font-family: 'Hind', sans-serif;
 }
 
-.font-tertiary {
-  font-family: bwnistaint-xbd !important
+.font-secondary {
+  font-family: playfair display, serif !important
 }
 
 .shadow {
@@ -445,13 +438,12 @@ textarea.form-control {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: bwnistaint-xbd;
   text-transform: uppercase;
   padding: 15px
 }
 
 .navbar .nav-item.active .nav-link{
-  background: #fff;
+  background: transparent;
   color: #000;
 }
 
@@ -529,8 +521,8 @@ textarea.form-control {
 .edu-bg-image {
   position: absolute;
   left: 0;
-  top: -80px;
-  z-index: -1
+  top: -280px;
+  z-index: -1;
 }
 
 .hover-bg-primary {
@@ -697,7 +689,6 @@ blockquote {
 }
 
 .content strong {
-  font-family: playfair display, serif;
   font-size: 22px;
   font-weight: 400;
   color: #000;
@@ -829,6 +820,29 @@ blockquote {
 
 /* ############### CUSTOM STYLES ############### */
 
+/* Common */
+.bg-light {
+  background: #F8F8F8;
+}
+.btn-black {
+  background: #000;
+  color: #fff;
+  border-radius: 0;
+}
+.btn-black.active,
+.btn-black:hover {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #000;
+  color: #000;
+}
+.btn-black a:hover {
+  color: #000;
+}
+.btn-black a {
+  transition: none;
+}
+/* /Common */
+
 /* Header */
 .navigation .navbar-brand {
   padding-left: 20px;
@@ -860,7 +874,7 @@ blockquote {
   color: #000;
   background: #fff
 }
-/* Header */
+/* /Header */
 
 /* Page title */
 .page-title img {
@@ -876,7 +890,7 @@ blockquote {
   background: rgba(255,255,255,.6);
   z-index: 0
 }
-/* Page title */
+/* /Page title */
 
 /* Homepage */
 .homepage {
@@ -895,7 +909,7 @@ blockquote {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(255,255,255,.6);
+  background: rgba(255,255,255,.7);
 }
 .homepage-background-image {
   object-fit: cover;
@@ -912,10 +926,17 @@ blockquote {
 .homepage-social a {
   color: #000
 }
-/* Homepage */
+/* /Homepage */
 
 /* Homepage - invite */
-.homepage-invite {}
+.homepage-invite h4 {
+  font-size: 21px;
+  font-weight: 300;
+}
+.homepage-invite p {
+  font-size: 17px;
+}
+
 .homepage-invite--title {
   font-size: 24px;
   margin-bottom: 110px;
@@ -925,10 +946,41 @@ blockquote {
   line-height: 25px;
   list-style: disc;
   padding-left: 15px;
+  font-size: 17px;
   margin-top: 20px;
 }
 .homepage-invite ul li {
   margin-bottom: 5px !important;;
 }
+/* /Homepage - invite */
 
-/* Homepage - invite */
+/* Homepage - services */
+.homepage-services--card {
+  cursor: pointer;
+}
+.homepage-services--card a {
+  color: #4c4c4c;
+}
+/* /Homepage - services */
+
+
+/* /Notarial activities */
+.notarial-activities p {
+  font-size: 17px;
+}
+/* /Notarial activities */
+
+
+/* Documents */
+.documents p {
+  font-size: 17px;
+}
+.documents-buttons {
+  margin-bottom: 80px;
+}
+.documents-buttons label {
+  font-weight: 400;
+}
+/* /Documents */
+
+

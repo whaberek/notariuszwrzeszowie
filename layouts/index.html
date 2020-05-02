@@ -7,74 +7,94 @@
     </div>
     <div class="container homepage-title">
       <div class="row">
-        <div class="col-lg-11 mx-auto">
-          <h2 class="text-black text-center font-weight-bold font-secondary ">{{ .Site.Data.homepage.banner.title | safeHTML }}</h2>
+        <div class="col-lg-11 text-center">
+          <img src="{{`images/emblem.png`| relURL}}" alt="Banner emblem" class="mb-3">
+          <h2 class="text-black text-center font-weight-bold font-secondary">
+            Kancelaria Notarialna
+            <br>Anna Grygowicz-Haberek
+            <br>Notariusz
+          </h2>
         </div>
       </div>
     </div>
     <!-- social icon -->
     <ul class="list-unstyled ml-3 zindex-1 homepage-social">
-      {{ range .Site.Params.social }}
-      <li class="mb-3"><a href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-      {{ end }}
+      <li class="mb-3"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li class="mb-3"><a href="#"><i class="fab fa-instagram"></i></a></li>
     </ul>
     <!-- /social icon -->
   </section>
   <!-- /hero area -->
 
-  {{ if .Site.Data.homepage.education.enable }}
-  {{ with .Site.Data.homepage.education }}
+<section class="section homepage-invite">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <!-- slider-item -->
+        <div class="text-center">
+          <h4 class="font-primary">Witam na stronie internetowej prowadzonej
+            przeze mnie kancelarii notarialnej. Zapraszam do zapoznania się z informacjami poniżej
+            oraz zamieszczonymi na kolejnych podstronach.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- homepage-invite -->
   <section class="section position-relative homepage-invite">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title homepage-invite--title">Witam na stronie internetowej prowadzonej
-            przeze mnie kancelarii notarialnej. Zapraszam do zapoznania się z informacjami poniżej
-            oraz zamieszczonymi na kolejnych podstronach.</h2>
-        </div>
         <div class="col-lg-4 col-md-4 mb-80">
           <img src="{{`images/homepage-invite.jpg`| relURL}}" alt="homepage-invite" class="img-fluid rounded w-100 d-block">
         </div>
         <div class="col-lg-8 col-md-8 mb-80">
           <div class="d-flex">
             <div>
-              <p class="text-dark mb-1">Moja kancelaria notarialna mieści się w Rzeszowie, przy ul. Matejki 8A, na parterze budynku
+              <p class="text-light">Moja kancelaria notarialna mieści się w Rzeszowie, przy ul. Matejki 8A, na parterze budynku
                   (w przejściu między ulicą Matejki, a ulicą Kopernika). W lokalu tym poprzednio mieścił się
                   oddział Getin Noble Bank SA. Znajdujemy się w samym centrum miasta, w niedalekim
                   sąsiedztwie:</p>
-              <ul class="mb-0 text-light">
+              <ul class="text-light">
                 <li>
                   Urzędu Miasta Rzeszowa – Wydziału Geodezji (Grodzki Ośrodka Dokumentacji
-                  Geodezyjnej i Kartograficznej) i Wydziału Architektury - ul. Kopernika 15 (ok. 130 m),
+                  Geodezyjnej i Kartograficznej) i Wydziału Architektury - ul. Kopernika 15 (ok. 130m),
                 </li>
-                <li class="mb-0 text-light">
-                  Powiatowego Ośrodka Dokumentacji Geodezyjnej i Kartograficznej – ul. Bernardyńska 7 (ok. 200 ),
+                <li class="text-light">
+                  Powiatowego Ośrodka Dokumentacji Geodezyjnej i Kartograficznej – ul. Bernardyńska 7 (ok. 200m),
                 </li>
-                <li class="mb-0 text-light">
-                  Urzędu Miasta Rzeszowa - Wydziału Spraw Obywatelskich i Wydziału Finansowego - ul. Okrzei 1 (ok. 40 m),
+                <li class="text-light">
+                  Urzędu Miasta Rzeszowa - Wydziału Spraw Obywatelskich i Wydziału Finansowego - ul. Okrzei 1 (ok. 40m),
                 </li>
-              <li class="mb-0 text-light">
-                  Urzędu Miasta Rzeszowa - Wydziału Ochrony Środowiska i Rolnictwa - ul. Rynek 7 (ok. 150 m),
+              <li class="text-light">
+                  Urzędu Miasta Rzeszowa - Wydziału Ochrony Środowiska i Rolnictwa - ul. Rynek 7 (ok. 150m),
               </li>
-              <li class="mb-0 text-light">
+              <li class="text-light">
                   Podkarpackiego Urzędu Wojewódzkiego w Rzeszowie - ul. Grunwaldzka 15 (ok. 300m),
               </li>
-              <li class="mb-0 text-light">
+              <li class="text-light">
                   Urzędu Miasta Rzeszowa – Urzędu Stanu Cywilnego i Biura Ewidencji Działalności
-                  Gospodarczej i Zezwoleń - Plac Ofiar Getta 7 (ok. 330 m),
+                  Gospodarczej i Zezwoleń - Plac Ofiar Getta 7 (ok. 330m),
               </li>
-              <li class="mb-0 text-light">
-                  Urzędu Miasta Rzeszowa - Wydziału Inwestycji - ul. Rynek 12 (ok. 180 m),
+              <li class="text-light">
+                  Urzędu Miasta Rzeszowa - Wydziału Inwestycji - ul. Rynek 12 (ok. 180m),
               </li>
-              <li class="mb-0 text-light">
-                  Rady Izby Notarialnej w Rzeszowie - Rynek 18 – (ok. 170 m).
+              <li class="text-light">
+                  Rady Izby Notarialnej w Rzeszowie - Rynek 18 – (ok. 170m).
               </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-8">
+      </div>
+    </div>
+    <img class="img-fluid edu-bg-image w-100" src="{{`images/education-bg.png`|relURL}}" alt="bg-image">
+  </section>
+
+  <section class="section bg-light homepage-invite">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
           <p class="mb-0 text-light">
             Szczegółową mapkę z lokalizacją Kancelarii znajdą Państwo w zakładce kontakt.
           </p>
@@ -127,85 +147,87 @@
         </div>
       </div>
     </div>
-    <!-- bg image -->
-    <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
   </section>
   <!-- /homepage-invite -->
-  {{ end }}
-  {{ end }}
 
-  {{ if .Site.Data.homepage.service.enable }}
-  {{ with .Site.Data.homepage.service }}
-  <!-- services -->
-  <section class="section">
+  <!-- homepage-services -->
+  <section class="section homepage-services">
     <div class="container">
       <div class="row">
 
         <div class="col-md-4 mb-4">
-          <div class="card hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="icon mb-5 fas fa-balance-scale"></i>
-              <h4 class="mb-4">Czynności</h4>
-              <p>Przed dokonaniem każdej czynności zalecany jest kontakt z notariuszem bądź pracownikiem
+          <div class="homepage-services--card card hover-shadow shadow">
+            <a href="/czynnosci">
+              <div class="card-body text-center px-4 py-5">
+                <i class="icon mb-5 fas fa-balance-scale"></i>
+                <h4 class="mb-4">Czynności</h4>
+                <p>Przed dokonaniem każdej czynności zalecany jest kontakt z notariuszem bądź pracownikiem
                 kancelarii notarialnej w celu ustalenia warunków.</p>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card active-bg-primary hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="icon mb-5 fas fa-folder"></i>
-              <h4 class="mb-4">Dokumenty</h4>
-              <p>Przeprowadzenie każdej czynności notarialnej powinno zostać poprzedzone kontaktem
+          <div class="homepage-services--card card hover-shadow shadow">
+            <a href="/dokumenty">
+              <div class="card-body text-center px-4 py-5">
+                <i class="icon mb-5 fas fa-folder"></i>
+                <h4 class="mb-4">Dokumenty</h4>
+                <p>Przeprowadzenie każdej czynności notarialnej powinno zostać poprzedzone kontaktem
                 z notariuszem lub pracownikiem tutejszej kancelarii notarialnej.</p>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="icon mb-5 fas fa-link"></i>
-              <h4 class="mb-4">Przydatne linki</h4>
-              <p>Tutaj znajdują się adresy aktów prawnych, które mogą okazać się pomocne.</p>
-            </div>
+          <div class="homepage-services--card card hover-shadow shadow">
+            <a href="/przydatne">
+              <div class="card-body text-center px-4 py-5">
+                <i class="icon mb-5 fas fa-link"></i>
+                <h4 class="mb-4">Przydatne linki</h4>
+                <p>Tutaj znajdują się adresy aktów prawnych, które mogą okazać się pomocne.</p>
+             </div>
+            </a>
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="icon mb-5 fas fa-file-invoice"></i>
-              <h4 class="mb-4">Opłaty</h4>
-              <p>Informacje o wszystkich należnościach związanych z czynnością, którą chcecie Państwo dokonać.</p>
-            </div>
+          <div class="homepage-services--card card hover-shadow shadow">
+            <a href="/oplaty">
+              <div class="card-body text-center px-4 py-5">
+                <i class="icon mb-5 fas fa-file-invoice"></i>
+                <h4 class="mb-4">Opłaty</h4>
+                <p>Informacje o należnościach związanych z czynnościami, które chcecie Państwo dokonać.</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="icon mb-5 fas fa-phone"></i>
-              <h4 class="mb-4">Kontakt</h4>
-              <p>Dokładne informacje o lokalizacji kancelarii.</p>
-            </div>
+          <div class="homepage-services--card card hover-shadow shadow">
+            <a href="/kontakt">
+              <div class="card-body text-center px-4 py-5">
+                <i class="icon mb-5 fas fa-phone"></i>
+                <h4 class="mb-4">Kontakt</h4>
+                <p>Dokładne informacje o lokalizacji kancelarii.</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- /services -->
-  {{ end }}
-  {{ end }}
+  <!-- /homepage-services -->
 
   <!-- thankyou -->
-  <section class="section bg-primary position-relative testimonial-bg-shapes">
+  <section class="section bg-light testimonial-bg-shapes">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto testimonial-slider">
           <!-- slider-item -->
           <div class="text-center testimonial-content">
-            <p class="text-white mb-4">Dziękuję za odwiedzenie strony internetowej kancelarii notarialnej</p>
+            <p class="mb-4">Dziękuję za odwiedzenie strony internetowej kancelarii notarialnej</p>
 <!--            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="avatar.jpg" alt="client-image">-->
-            <h4 class="text-white">Anna Grygowicz-Haberek</h4>
-            <h6 class="text-light mb-4">Notariusz</h6>
+            <h4 class="font-tertiary">Anna Grygowicz-Haberek</h4>
+            <p class="mb-4">Notariusz</p>
           </div>
         </div>
       </div>

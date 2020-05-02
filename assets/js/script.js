@@ -1,7 +1,6 @@
 (function ($) {
     'use strict';
-
-
+    
     // Preloader js    
     $(window).on('load', function () {
         $('.preloader').fadeOut(100);
@@ -141,7 +140,26 @@
             }
         });
     }
-
-
-
+    
+    /* Homepage */
+    $('.homepage-services--card').hover(
+      function(){ $(this).addClass('active-bg-primary') },
+      function(){ $(this).removeClass('active-bg-primary') }
+    )
+    /* /Homepage */
+    
+   /* Documents */
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault()
+        
+        $('html, body').animate(
+          {
+              scrollTop: $($(this).attr('href')).offset().top,
+          },
+          500,
+          'linear'
+        )
+    })
+    /* /Documents */
+    
 })(jQuery);
