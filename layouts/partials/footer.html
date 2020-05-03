@@ -12,8 +12,11 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <form action="{{.Site.Params.contact.form_action}}" method="POST" class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <input type="text" id="name" name="name" placeholder="Imię i nazwisko" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="phone" name="phone" placeholder="Telefon" class="form-control px-0 mb-4">
             </div>
             <div class="col-md-6">
               <input type="email" id="email" name="email" placeholder="Adres email" class="form-control px-0 mb-4">
@@ -23,7 +26,7 @@
                 placeholder="Treść zapytania"></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">Wyślij</button>
+              <button class="btn btn-primary w-100 font-primary">Wyślij</button>
             </div>
           </form>
         </div>

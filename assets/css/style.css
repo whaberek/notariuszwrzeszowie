@@ -149,6 +149,12 @@ body {
   padding: 20px;
 }
 
+@media(max-width:991px) {
+  body {
+    padding: 0;
+  }
+}
+
 ::selection {
   background: var(--primary-color);
   color: #fff
@@ -944,6 +950,7 @@ blockquote {
 /* /Homepage */
 
 /* Homepage - invite */
+.helpful-links h4,
 .homepage-invite h4 {
   font-size: 21px;
   font-weight: 300;
@@ -989,6 +996,9 @@ blockquote {
 /* Documents */
 .documents p {
   font-size: 17px;
+}
+.documents .btn-block+.btn-block {
+  margin: 0;
 }
 .documents .btn {
   text-transform: initial;

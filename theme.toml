@@ -1,7 +1,7 @@
 name = "Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz"
 license = "MIT"
 description = "Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz"
-homepage = "http://http://www.notariuszwrzeszowie.pl/"
+homepage = "http://www.notariuszwrzeszowie.pl"
 tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'clean', 'simple', 'creative', 'contact-form', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'resume', 'portfolio', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'theme', 'typography']
 features = ['bootstrap','responsive']
 min_version = "0.58.0"
