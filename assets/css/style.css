@@ -221,6 +221,13 @@ a:hover {
   padding-bottom: 80px
 }
 
+@media(max-width:991px) {
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px
+  }
+}
+
 .section-title {
   margin-bottom: 80px;
   font-family: 'Hind', sans-serif;
@@ -993,16 +1000,28 @@ blockquote {
 /* /Notarial activities */
 
 
-/* Documents */
-.documents p {
+/* Documents + Payments */
+.documents p,
+.payments p {
   font-size: 17px;
 }
-.documents .btn-block+.btn-block {
+.documents .btn-block+.btn-block,
+.payments .btn-block+.btn-block {
   margin: 0;
 }
-.documents .btn {
+.documents .btn,
+.payments .btn {
   text-transform: initial;
 }
-/* /Documents */
+/* /Documents + Payments */
+
+/* Helpful links */
+.helpful-links--item article {
+  padding-top: 40px;
+}
+.helpful-links--item .btn {
+  text-transform: initial;
+}
+/* /Helpful links */
 
 
