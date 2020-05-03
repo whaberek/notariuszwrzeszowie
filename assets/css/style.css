@@ -975,11 +975,8 @@ blockquote {
 .documents p {
   font-size: 17px;
 }
-.documents-buttons {
-  margin-bottom: 80px;
-}
-.documents-buttons label {
-  font-weight: 400;
+.documents .btn {
+  text-transform: initial;
 }
 /* /Documents */
 
