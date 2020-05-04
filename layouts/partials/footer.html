@@ -11,7 +11,7 @@
       </div>
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
-          <form action="{{.Site.Params.contact.form_action}}" method="POST" class="row">
+          <form action="https://getform.io/f/1dad4bf1-f0d1-4325-bc88-8f8f1345b9b2" method="POST" class="row">
             <div class="col-md-12">
               <input type="text" id="name" name="name" placeholder="Imię i nazwisko" class="form-control px-0 mb-4">
             </div>
@@ -25,8 +25,20 @@
               <textarea name="message" id="message" class="form-control px-0 mb-4"
                 placeholder="Treść zapytania"></textarea>
             </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100 font-primary">Wyślij</button>
+            <div class="col-lg-12 text-center">
+              <div id="g-recaptcha"></div>
+            </div>
+            <div class="col-lg-12 mx-auto">
+              <button type="submit" class="btn btn-primary w-100 font-primary">Wyślij</button>
+            </div>
+            <div class="col-12 rodo-info">
+              <p class="text-light mb-0">Zgodnie z rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27
+                kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
+                osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy
+                95/46/WE (ogólne rozporządzenie o ochronie danych), wyrażam zgodę na przetwarzanie
+                moich danych osobowych zawartych w formularzu kontaktowym dla potrzeb niezbędnych
+                do obsługi korespondencji.
+              </p>
             </div>
           </form>
         </div>
@@ -75,6 +87,29 @@
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    var isMapExist = document.getElementById('map');
+
+    if (isMapExist) {
+      var location = {lat: 50.038153, lng: 22.003574};
+      var map = new google.maps.Map(
+              document.getElementById('map'), {
+                zoom: 17,
+                center: location,
+              });
+      var marker = new google.maps.Marker({position: location, map: map});
+    }
+  }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcRycerimcs_7KRpN3B_WN7nb24rDMOu8&callback=initMap">
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+</script>
 
 {{ "<!-- google analitycs -->" | safeHTML }}
 {{ with .Site.Params.google_analitycs_id }}

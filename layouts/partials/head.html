@@ -26,5 +26,11 @@
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
-
+  <script>
+    var onloadCallback = function() {
+      grecaptcha.render('g-recaptcha', {
+        'sitekey' : '6LcBePIUAAAAAGpMgEZUiqEXoOJebMLL0HemMEte'
+      });
+    };
+  </script>
 </head>

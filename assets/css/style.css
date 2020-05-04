@@ -1000,20 +1000,30 @@ blockquote {
 /* /Notarial activities */
 
 
-/* Documents + Payments */
-.documents p,
+/* Documents */
+.documents p {
+  font-size: 17px;
+}
+.documents .btn-block+.btn-block {
+  margin: 0;
+}
+.documents .btn {
+  text-transform: initial;
+}
+/* /Documents */
+
+/* Payments */
 .payments p {
   font-size: 17px;
 }
-.documents .btn-block+.btn-block,
 .payments .btn-block+.btn-block {
   margin: 0;
 }
-.documents .btn,
 .payments .btn {
   text-transform: initial;
 }
-/* /Documents + Payments */
+/* /Documents */
+
 
 /* Helpful links */
 .helpful-links--item article {
@@ -1024,4 +1034,18 @@ blockquote {
 }
 /* /Helpful links */
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+#g-recaptcha {
+  display: inline-block;
+}
+
+.rodo-info {
+  margin-top: 20px;
+}
+.rodo-info p {
+  font-size: 13px;
+}
 
