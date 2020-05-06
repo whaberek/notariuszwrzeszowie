@@ -1,6 +1,5 @@
 ---
-title: Dokumenty
-date: 2019-05-12T06:14:34.000+00:00
-description: This is meta description.
-
+title: "Dokumenty"
+date: 2020-05-06T22:45:34.134Z
+description: "Dokumenty | Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz"
 ---

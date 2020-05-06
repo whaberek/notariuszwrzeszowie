@@ -1,4 +1,4 @@
-baseURL = "https://whaberek.netlify.com"
+baseURL = "https://whaberek.netlify.app"
 languageCode = "pl-PL"
 summaryLength = "10"
 theme = "notariuszwrzeszowie"
@@ -26,34 +26,38 @@ URL = "plugins/shuffle/shuffle.min.js"
 
 # menu
 [[menu.main]]
+URL = "o-kancelarii"
+name = "O kancelarii"
+weight = 2
+[[menu.main]]
 URL = "czynnosci"
 name = "Czynności"
-weight = 2
+weight = 3
 [[menu.main]]
 URL = "dokumenty"
 name = "Dokumenty"
-weight = 3
+weight = 4
 [[menu.main]]
 URL = "przydatne"
 name = "Przydatne linki"
-weight = 4
+weight = 5
 [[menu.main]]
 URL = "oplaty"
 name = "Opłaty"
-weight = 5
+weight = 6
 [[menu.main]]
 URL = "kontakt"
 name = "Kontakt"
-weight = 6
+weight = 7
 [params]
 address = "ul. 3 Maja<br>35-604 Rzeszów"
 author = "Wojciech Haberek"
 copyright = "Copyrighht &copy; 2020 a theme by [Wojciech Haberek](http://whaberek.pl)"
-description = "This is meta description"
-email = "kancelaria@grygowicz-haberek.com"
+description = "Kancelaria Notarialna Anna Grygowicz-Haberek, Rzeszów, podkarpackie, Anna Grygowicz, kom. +48 506 550 710, email: kancelaria@notariuszwrzeszowie.pl - Zapraszamy do współpracy - skontaktuj się z nami!"
+email = "kancelaria@notariuszwrzeszowie.pl"
 google_analitycs_id = ""
 home = "Strona Główna"
-logo = "images/logo.png"
+logo = "images/emblem.png"
 phone = "+48 500 500 500"
 theme_color = "#41228e"
 [params.contact]
@@ -81,6 +85,3 @@ preloader = ""
 [[params.social]]
 URL = "#"
 icon = "fa-facebook-f"
-[[params.social]]
-URL = "#"
-icon = "fa-instagram"

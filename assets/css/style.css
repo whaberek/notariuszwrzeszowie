@@ -5,6 +5,12 @@ VERSION: Versoin Number
 -------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap";
 
+@font-face {
+  font-family: galliardstd;
+  src: url(../fonts/GalliardStd-Bold.woff) format("woff");
+  font-weight: bold;
+}
+
 body {
   line-height: 1.2;
   font-family: 'Hind', sans-serif;
@@ -343,7 +349,8 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: playfair display, serif !important
+  font-family: playfair display, serif !important;
+  font-family: galliardstd, serif !important;
 }
 
 .shadow {
@@ -405,7 +412,8 @@ a:hover {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #c7c7c7;
-  height: 60px
+  height: 60px;
+  font-family: 'Hind', sans-serif;
 }
 
 .form-control:focus {
@@ -660,7 +668,11 @@ textarea.form-control {
 }
 
 .footer-section {
-  padding-top: 200px
+  /*padding-top: 200px*/
+}
+
+.footer-section a:hover {
+  color: #a9a9a9;
 }
 
 .section-on-footer {
@@ -776,7 +788,8 @@ blockquote {
 }
 
 .page-title {
-  padding: 250px 0 150px
+  padding: 250px 0 150px;
+  background-size: 100%;
 }
 
 .page-title .container {
@@ -861,6 +874,7 @@ blockquote {
 }
 
 #scrollTop {
+  background: #fff;
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -966,6 +980,16 @@ blockquote {
 .page-title img {
   z-index: -1
 }
+.page-title.czynnosci,
+.page-title.oplaty,
+.page-title.przydatne,
+.page-title.o-kancelarii {
+  background-position: center;
+}
+.page-title.documents,
+.page-title.kontakt {
+  background-position: top;
+}
 @media(max-width:991px) {
   .page-title {
     padding: 120px 0 70px;
@@ -1010,7 +1034,7 @@ blockquote {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(255,255,255,.7);
+  background: rgba(255,255,255,.15);
 }
 .homepage-background-image {
   object-fit: cover;
@@ -1040,30 +1064,13 @@ blockquote {
 /* /Homepage */
 
 /* Homepage - invite */
-.helpful-links h4,
-.homepage-invite h4 {
+.helpful-links h4 {
   font-size: 21px;
   font-weight: 300;
 }
-
-.homepage-invite-image {
-  max-width: 100%;
-  height: 100%;
-}
-
-@media(max-width:991px) {
-  .homepage-invite-image {
-    padding-bottom: 30px;
-  }
-}
-
-.homepage-invite-image img {
-  background: #fff;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 6px;
+.homepage-invite h4 {
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .homepage-invite p {

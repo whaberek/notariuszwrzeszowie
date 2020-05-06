@@ -3,49 +3,49 @@
 
 <button id="scrollTop" class="btn btn-lg back-to-top shadow-dark" role="button"><i class="fas fa-chevron-up"></i></button>
 
-<section class="section section-on-footer" data-background="{{`images/bg-dots.png` | absURL}}">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Zapytanie on-line</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <form action="https://getform.io/f/1dad4bf1-f0d1-4325-bc88-8f8f1345b9b2" method="POST" class="row">
-            <div class="col-md-12">
-              <input type="text" id="name" name="name" placeholder="Imię i nazwisko" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="tel" id="phone" name="phone" placeholder="Telefon" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Adres email" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Treść zapytania"></textarea>
-            </div>
-            <div class="col-lg-12 text-center">
-              <div id="g-recaptcha"></div>
-            </div>
-            <div class="col-lg-12 mx-auto">
-              <button type="submit" class="btn btn-primary w-100 font-primary">Wyślij</button>
-            </div>
-            <div class="col-12 rodo-info">
-              <p class="text-light mb-0">Zgodnie z rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27
-                kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
-                osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy
-                95/46/WE (ogólne rozporządzenie o ochronie danych), wyrażam zgodę na przetwarzanie
-                moich danych osobowych zawartych w formularzu kontaktowym dla potrzeb niezbędnych
-                do obsługi korespondencji.
-              </p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--<section class="section section-on-footer" data-background="{{`images/bg-dots.png` | absURL}}">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-12 text-center">-->
+<!--        <h2 class="section-title">Zapytanie on-line</h2>-->
+<!--      </div>-->
+<!--      <div class="col-lg-8 mx-auto">-->
+<!--        <div class="bg-white rounded text-center p-5 shadow-down">-->
+<!--          <form id="submit_form" action="/submit" method="POST" class="row">-->
+<!--            <div class="col-md-12">-->
+<!--              <input type="text" id="name" name="name" placeholder="Imię i nazwisko" class="form-control px-0 mb-4">-->
+<!--            </div>-->
+<!--            <div class="col-md-6">-->
+<!--              <input type="tel" id="phone" name="phone" placeholder="Telefon" class="form-control px-0 mb-4">-->
+<!--            </div>-->
+<!--            <div class="col-md-6">-->
+<!--              <input type="email" id="email" name="email" placeholder="Adres email" class="form-control px-0 mb-4">-->
+<!--            </div>-->
+<!--            <div class="col-12">-->
+<!--              <textarea name="message" id="message" class="form-control px-0 mb-4"-->
+<!--                placeholder="Treść zapytania"></textarea>-->
+<!--            </div>-->
+<!--            <div class="col-lg-12 text-center">-->
+<!--              <div id="g-recaptcha"></div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-12 mx-auto">-->
+<!--              <button type="submit" name="submit" class="btn btn-primary w-100 font-primary">Wyślij</button>-->
+<!--            </div>-->
+<!--            <div class="col-12 rodo-info">-->
+<!--              <p class="text-light mb-0">Zgodnie z rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27-->
+<!--                kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych-->
+<!--                osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy-->
+<!--                95/46/WE (ogólne rozporządzenie o ochronie danych), wyrażam zgodę na przetwarzanie-->
+<!--                moich danych osobowych zawartych w formularzu kontaktowym dla potrzeb niezbędnych-->
+<!--                do obsługi korespondencji.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </form>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 <!-- /contact -->
 {{ end }}
 
@@ -54,21 +54,18 @@
   <div class="section">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
+        <div class="col-md-6">
+          <h5 class="text-light">Kontakt</h5>
           <p class="text-white paragraph-lg">
-            kancelaria@notariuszwrzeszowie.pl
+            tel. 506 550 710<br>
+            tel. 17 741 54 99<br>
+            e-mail: <a href="mailto:kancelaria@notariuszwrzeszowie.pl">kancelaria@notariuszwrzeszowie.pl</a>
           </p>
         </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Telefon</h5>
-          <p class="text-white paragraph-lg">
-            506 550 710
-          </p>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <h5 class="text-light">Adres</h5>
           <p class="text-white paragraph-lg">
+            Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz<br>
             35-064 Rzeszów<br>
             ul. Matejki 8A (parter)
           </p>
@@ -107,9 +104,9 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcRycerimcs_7KRpN3B_WN7nb24rDMOu8&callback=initMap">
 </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-</script>
+<!--<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"-->
+<!--        async defer>-->
+<!--</script>-->
 
 {{ "<!-- google analitycs -->" | safeHTML }}
 {{ with .Site.Params.google_analitycs_id }}

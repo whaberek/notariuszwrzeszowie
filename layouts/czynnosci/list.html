@@ -1,6 +1,18 @@
 {{ define "main" }}
 
-{{ partial "page-title.html" . }}
+<!-- page title -->
+<section class="page-title czynnosci" data-background="{{`images/notarial-act.jpg` | relURL}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="font-tertiary">{{.Title}}</h1>
+            </div>
+        </div>
+    </div>
+    <!-- background shapes -->
+    <div class="white-layer"></div>
+</section>
+<!-- /page title -->
 
 <!-- section -->
 

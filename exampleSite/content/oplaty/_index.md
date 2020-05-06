@@ -1,5 +1,5 @@
 ---
 title: "Opłaty"
-date: 2019-05-12T12:14:34+06:00
-description: "This is meta description."
+date: 2020-05-06T22:45:34.134Z
+description: "Opłaty | Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz"
 ---

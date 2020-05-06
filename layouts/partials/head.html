@@ -1,13 +1,17 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ .Title }}</title>
+  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz{{ end }}</title>
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="Keywords" content="notariusz rzeszów, tani notariusz rzeszów, notariusz w sobotę rzeszów, notariusz w rzeszowie, kancelaria notarialna w rzeszowie, notariusze rzeszów, kancelarie notarialne Rzeszów, notariusz Rzeszów centrum, notariusz Rzeszów Kopernika, notariusz Rzeszów Matejki, akt notarialny, akty notarialne, notariusz Anna Grygowicz-Haberek, notariusz na parterze, notariusz blisko starostwa, notariusz blisko geodezji">
+  <meta name="Description" content="Kancelaria Notarialna Anna Grygowicz-Haberek, Rzeszów, podkarpackie, Anna Grygowicz, kom. +48 506 550 710, email: kancelaria@notariuszwrzeszowie.pl - Zapraszamy do współpracy - skontaktuj się z nami!">
+  <meta name="robots" content="all">
+  <meta name="googlebot" content="all">
+  <meta name="msnbot" content="all">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="5 days">
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
-
   <style>
     :root{
       --primary-color:{{ .Site.Params.theme_color }};
@@ -16,7 +20,7 @@
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  <link href="{{ .URL | absURL }} " rel="stylesheet">
+  <link href="{{ .URL | absURL }}" rel="stylesheet">
   {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
@@ -24,8 +28,8 @@
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ `images/emblem.png` | relURL }} " type="image/x-icon">
+  <link rel="icon" href="{{ `images/emblem.png` | relURL }} " type="image/x-icon">
   <script>
     var onloadCallback = function() {
       grecaptcha.render('g-recaptcha', {

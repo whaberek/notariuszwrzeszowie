@@ -1,8 +1,20 @@
 {{ define "main" }}
 
-  {{ partial "page-title.html" . }}
+<!-- page title -->
+<section class="page-title kontakt" data-background="{{`images/kontakt.jpg` | relURL}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="font-tertiary">{{.Title}}</h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <div class="white-layer"></div>
+</section>
+<!-- /page title -->
 
-<section class="section position-relative">
+<section class="section position-relative" data-background="{{`images/bg-dots.png` | absURL}}">
   <div class="container">
     <div class="row">
       <div class="col-lg-5 col-md-5">
@@ -14,7 +26,8 @@
             <h4>Kancelaria Notarialna<br>Anna Grygowicz-Haberek<br>Notariusz</h4>
             <p class="mb-0 text-light">35-064 Rzeszów</p>
             <p class="mb-0 text-light">ul. Matejki 8A (parter)</p>
-            <p class="mb-0 text-light">tel.: +48 506 550 710</p>
+            <p class="mb-0 text-light">tel. 506 550 710</p>
+            <p class="mb-0 text-light">tel. 17 741 54 99</p>
             <p class="mb-0 text-light">e-mail: <a href="mailto:kancelaria@notariuszwrzeszowie.pl">kancelaria@notariuszwrzeszowie.pl</a></p>
             <p class="mb-0 text-light">www: <a href="https://www.notariuszwrzeszowie.pl" alt="Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz">notariuszwrzeszowie.pl</a></p>
           </div>
@@ -41,8 +54,6 @@
       </div>
     </div>
   </div>
-  <!-- bg image -->
-  <img class="img-fluid edu-bg-image w-100" src="{{`images/education-bg.png`|relURL}}" alt="bg-image">
 </section>
 <div id="map"></div>
 
