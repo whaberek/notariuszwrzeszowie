@@ -450,7 +450,7 @@ textarea.form-control {
 
 @media(max-width:991px) {
   .navigation {
-    padding: 20px;
+    padding: 0;
     background: #fff
   }
 }
@@ -898,8 +898,18 @@ blockquote {
   color: #000 !important;
   white-space: normal;
 }
+@media(max-width:991px) {
+  .navigation .navbar-brand {
+    font-size: 13px;
+  }
+}
 .navbar-brand-logo {
   width: 48px;
+}
+@media(max-width:991px) {
+  .navbar-brand-logo {
+    width: 34px;
+  }
 }
 .navigation .navbar-brand-main {
   opacity: 0;
@@ -958,7 +968,7 @@ blockquote {
 }
 @media(max-width:991px) {
   .page-title {
-    padding: 200px 0 70px;
+    padding: 120px 0 70px;
   }
   .page-title h1 {
     font-size: 50px;
@@ -988,19 +998,6 @@ blockquote {
   .homepage-title h2 {
     font-size: 28px;
   }
-  .homepage-social {
-    display: inherit;
-    left: 0;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    margin-left: 0 !important;
-    width: 100%;
-    justify-content: center;
-  }
-  .homepage-social li {
-    padding: 15px 20px;
-  }
 }
 .homepage-background {
   height: 100vh;
@@ -1023,12 +1020,22 @@ blockquote {
 .homepage-title {
   align-self: center;
 }
-.homepage-social {
-  position: absolute;
-  align-self: center;
-}
 .homepage-social a {
-  color: #000
+  color: #000;
+  padding: 7px 15px
+}
+@media(max-width:991px) {
+  .homepage-social {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    padding: 0;
+  }
+  .homepage-social a {
+    color: #fff;
+    padding: 7px 15px;
+  }
 }
 /* /Homepage */
 
