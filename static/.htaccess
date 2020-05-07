@@ -1,3 +1,14 @@
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.notariuszwrzeszowie.pl/$1 [R,L]
+## Turn on rewrite engine
+RewriteEngine on
+
+## Force WWW
+RewriteCond %{HTTP_HOST} ^notariuszwrzeszowie\.pl [NC]
+RewriteRule ^(.*)$ https://www.notariuszwrzeszowie.pl/$1 [L,R=301,NC]
+
+## Force HTTPS
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+## Remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ https://www.notariuszwrzeszowie.pl/$1 [L,R=301]
