@@ -3,7 +3,7 @@ baseURL = "https://whaberek.netlify.app"
 languageCode = "pl-PL"
 summaryLength = "10"
 theme = "notariuszwrzeszowie"
-title = "Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz"
+title = "Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz, Rzeszów"
 
 # css plugins
 [[params.plugins.css]]
