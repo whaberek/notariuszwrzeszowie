@@ -1072,10 +1072,20 @@ blockquote {
   left: 0;
   background: rgba(255,255,255,.15);
 }
+@media(max-width:991px) {
+  .homepage-background:before {
+    background: rgba(255,255,255,.35);
+  }
+}
 .homepage-background-image {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+@media(max-width:991px) {
+  .homepage-background-image {
+    object-position: 30%;
+  }
 }
 .homepage-title {
   align-self: center;
