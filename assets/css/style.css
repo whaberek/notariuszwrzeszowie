@@ -289,7 +289,7 @@ a:hover {
 }
 
 .text-light {
-  color: #999 !important
+  color: #666 !important
 }
 
 .mb-10 {
@@ -671,6 +671,16 @@ textarea.form-control {
   /*padding-top: 200px*/
 }
 
+.footer-section h5 {
+  color: #b7b7b7 !important;
+}
+
+@media(max-width:991px) {
+  .footer-section h5 {
+    text-align: center;
+  }
+}
+
 .footer-section a:hover {
   color: #a9a9a9;
 }
@@ -996,15 +1006,17 @@ blockquote {
 .page-title.czynnosci,
 .page-title.oplaty,
 .page-title.przydatne,
-.page-title.o-kancelarii {
+.page-title.o-kancelarii,
+.page-title.kontakt {
   background-position: center;
 }
-.page-title.documents,
-.page-title.kontakt {
+.page-title.documents {
   background-position: top;
 }
 
-.page-title.kontakt:before,
+.page-title.kontakt:before {
+  background: rgba(255,255,255,.05);
+}
 .page-title.o-kancelarii:before,
 .page-title.czynnosci:before {
   background: rgba(255,255,255,.15);
