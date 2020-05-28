@@ -4,6 +4,7 @@ languageCode = "pl-PL"
 summaryLength = "10"
 theme = "notariuszwrzeszowie"
 title = "Kancelaria Notarialna Anna Grygowicz-Haberek Notariusz, Rzeszów"
+enableRobotsTXT = "true"
 
 # css plugins
 [[params.plugins.css]]
