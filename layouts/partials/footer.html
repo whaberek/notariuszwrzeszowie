@@ -2,6 +2,7 @@
 <!-- contact -->
 
 <button id="scrollTop" class="btn btn-lg back-to-top shadow-dark" role="button"><i class="fas fa-chevron-up"></i></button>
+<div id="fb-root"></div>
 
 <!--<section class="section section-on-footer" data-background="{{`images/bg-dots.png` | absURL}}">-->
 <!--  <div class="container">-->
@@ -70,6 +71,9 @@
             ul. Matejki 8A (parter)
           </p>
         </div>
+        <div class="col-md-12 privacy-policy">
+          <a href="/polityka-prywatnosci" class="text-white">Polityka prywatności</a>
+        </div>
       </div>
     </div>
   </div>
@@ -81,7 +85,17 @@
     Rozumiem
   </button>
 </div>
+
 <!-- /footer -->
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="105208007923999"
+     logged_in_greeting="Witam na stronie mojej kancelarii. W razie jakichkolwiek pytań proszę o kontakt"
+     logged_out_greeting="Witam na stronie mojej kancelarii. W razie jakichkolwiek pytań proszę o kontakt">
+</div>
+<!-- /Your Chat Plugin code -->
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range .Site.Params.plugins.js}}
@@ -126,3 +140,20 @@
   ga('send', 'pageview');
 </script>
 {{ end }}
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v7.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
