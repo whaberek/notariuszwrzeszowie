@@ -679,6 +679,9 @@ textarea.form-control {
   .footer-section h5 {
     text-align: center;
   }
+  .footer-section .privacy-policy {
+    text-align: center;
+  }
 }
 
 .footer-section a:hover {
@@ -899,7 +902,7 @@ blockquote {
   background: #fff;
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  left: 25px;
   padding: .5rem 1rem;
   border-radius: 40px;
   opacity: 0;
@@ -1242,14 +1245,16 @@ blockquote {
     margin-bottom: 40px;
   }
 }
-
+.btn-sm.acceptcookies {
+  padding: 5px 30px;
+}
 .cookiealert {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   margin: 0 !important;
-  z-index: 999;
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   border-radius: 0;
@@ -1267,7 +1272,8 @@ blockquote {
 }
 
 .cookiealert a {
-  text-decoration: underline
+  text-decoration: underline;
+  line-height: 30px;
 }
 
 .cookiealert .acceptcookies {
